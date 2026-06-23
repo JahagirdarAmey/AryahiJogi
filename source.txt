@@ -1,0 +1,140 @@
+About Me
+My name is Aryahi Jogi, and I am a student at Scripps Ranch High School with a passion for engineering, problem-solving, and community impact. My interests span industrial engineering, human-centered design, and psychology, areas that allow me to combine analytical thinking with creativity and empathy. Throughout high school, I have challenged myself through rigorous coursework, leadership roles, athletics, and real-world engineering experiences that have strengthened both my technical and interpersonal skills.
+Beyond the classroom, I have pursued opportunities to apply engineering concepts to meaningful projects. As a Quality Engineering Intern at FluidPowerAI, I worked on process improvement, documentation systems, data collection methods, and product quality initiatives. These experiences taught me how engineering principles can improve efficiency, safety, and reliability while helping organizations solve complex operational challenges. I enjoy finding practical solutions to everyday problems and using data to support informed decision-making.
+I am equally passionate about serving my community and inspiring future generations. As President of engineering club, a mentor and coach of middle school students for Science Olympiad, and leader of multiple outreach initiatives, I have worked to make STEM education more accessible to younger students. Through presentations, mentorship, and the publication of a children's engineering book, I strive to help others discover opportunities they may not have previously considered. My goal is to continue combining engineering, leadership, and service to create positive and lasting impact.
+________________________________________
+
+
+
+
+
+
+
+
+
+Community Outreach Project
+One of my most meaningful projects was the creation of Maya and Jasper's Engineering Adventure, a children's book designed to introduce elementary school students to the many fields of engineering. The project involved extensive research, multiple design iterations, collaboration with publishers, fundraising through community support, and the distribution of over 100 books. Through school visits, library presentations, and community events, the project helped increase awareness of engineering careers and demonstrated how educational outreach can inspire curiosity and interest in STEM at an early age.
+
+Research Paper
+Building upon my engineering outreach initiative, I conducted research examining factors that contribute to low awareness and interest in engineering among students. Using surveys, interviews, and statistical analysis, I investigated common misconceptions, barriers to exposure, and educational gaps related to engineering careers. The research evaluates the effectiveness of outreach interventions, including educational presentations and children's literature, while measuring changes in student interest and understanding. This work combines engineering, data analysis, and community engagement to explore practical strategies for increasing STEM participation.
+
+Community Outreach Project
+The Engineering Outreach Project began after I noticed that many students and families in my community were familiar with careers in medicine, business, and science, but knew very little about the diverse opportunities available within engineering. To better understand the issue, I conducted surveys and conversations with students, parents, and community members. The results revealed a significant lack of awareness regarding engineering disciplines and career pathways.
+To address this challenge, I researched multiple engineering fields and developed a plan to make the information accessible to younger audiences. This led to the creation of Maya and Jasper's Engineering Adventure, a children's book that introduces engineering concepts through engaging stories and relatable examples. The goal was to simplify complex topics and make engineering feel approachable and exciting for elementary-aged students.
+Developing the project required persistence and creativity. I completed nine drafts of the book, evaluated publishing options, secured funding through my part-time job and a community fundraising campaign, and coordinated printing and distribution efforts. Once published, I organized presentations at elementary schools, libraries, bookstores, and community events where I introduced students to various engineering disciplines and answered questions about STEM careers.
+To measure the project's impact, I conducted pre- and post-presentation surveys to evaluate changes in student understanding and interest. The results showed approximately a 20% increase in interest in engineering and a noticeable reduction in misconceptions about the field. The project demonstrated how educational outreach, combined with accessible learning materials, can encourage students to explore engineering and broaden their understanding of future career possibilities.
+ 
+FluidPowerAI Quality Engineering Internship
+As a Quality Engineering Intern at FluidPowerAI, I worked on projects focused on process optimization, quality improvement, documentation management, and operational efficiency. The internship provided hands-on experience applying engineering principles in a professional environment while collaborating with engineers and technicians on real-world challenges.
+Documentation and Part Management System
+One of my primary responsibilities was redesigning the company's documentation and labeling process. I developed a centralized system that standardized part numbers, document versions, and manufacturing records. By improving organization and accessibility, the new system reduced confusion, streamlined workflows, and contributed to an estimated 10% reduction in build time. The framework became the standard process used by team members moving forward.
+Data Collection and Testing System Improvement
+I designed and implemented an improved iPhone-based testing stand used for battery data collection. The new setup enhanced operator safety, increased measurement consistency, and improved the stability of collected data. By reducing sources of variation and improving repeatability, the project achieved approximately a 5% improvement in testing accuracy and reliability.
+Instruction Manual Verification and Product Quality
+To improve manufacturing quality, I reviewed and verified technical instructions used during battery assembly. I identified inconsistencies, updated procedures, and tested the instructions by independently completing assembly processes. These improvements contributed to a reduction in customer complaints and helped ensure that products were built more consistently and accurately. The project resulted in an estimated 2% reduction in quality-related issues while strengthening overall process reliability.
+Additional Contributions
+In addition to these projects, I created process flow diagrams, assisted with workflow mapping, contributed to shelf-life data tracking initiatives, and participated in safety improvement efforts. Through these experiences, I developed a deeper understanding of quality engineering, systems thinking, root-cause analysis, and continuous improvement. The internship reinforced my interest in industrial engineering and demonstrated how thoughtful process design can create measurable organizational impact.
+Academic Highlights
+•	10 Advanced Placement courses 
+•	4 Honors courses 
+•	Multiple Dual Enrollment college courses 
+•	5 UCSD Extension university-level courses 
+•	Strong emphasis on engineering, technology, mathematics, and interdisciplinary problem solving 
+•	Coursework aligned with interests in Industrial Engineering, Human Factors Engineering, and Cognitive Science 
+
+
+Advanced Placement (AP) Courses
+•	AP Biology 
+•	AP European History 
+•	AP Statistics 
+•	AP Psychology 
+•	AP English Language and Composition 
+•	AP Calculus AB 
+•	AP Spanish and Culture
+•	AP Physics C (Senior Year) 
+•	AP Computer Science (Senior Year) 
+•	AP Environmental Science(Senior Year) 
+Honors Courses
+•	Honors Principles of Engineering 
+•	Honors Precalculus 
+•	Honors Digital Electronics 
+•	Honors U.S. History 
+Dual Enrollment & College Courses
+•	Calculus I (Miramar College) 
+•	Calculus II (Miramar College) 
+•	Political Science (Dual Enrollment) 
+•	Additional Dual Enrollment Coursework (Senior Year) 
+University of California San Diego (UCSD) Extension Courses
+•	Introduction to Computer Science (Python Programming) 
+•	Mechanical Engineering Fundamentals 
+•	Machine Learning 
+•	The Atmosphere 
+•	Musical Minds 
+Mathematics Sequence
+•	Advanced Integrated Math I 
+•	Advanced Integrated Math II 
+•	Advanced Integrated Math III 
+•	Honors Precalculus 
+•	AP Calculus AB 
+•	College Math 151 
+•	College Math 252  
+Science Sequence
+•	Advanced Physics 
+•	AP Biology 
+•	Chemistry 
+•	AP Physics C 
+Engineering & Technology Courses
+•	Honors Principles of Engineering 
+•	Introduction to Computer Science (Python) 
+•	Machine Learning 
+•	Honors Digital Electronics 
+Humanities & Social Sciences
+•	AP European History 
+•	Honors U.S. History 
+•	AP Psychology 
+•	Political Science 
+
+English Sequence
+•	Seminar English I
+•	Seminar English II
+•	AP English Language and Composition 
+ 
+
+FluidPowerAI Quality Engineering Internship
+During my internship at FluidPowerAI, I gained hands-on experience applying engineering principles in a fast-paced technology environment focused on battery systems and manufacturing processes. As a Quality Engineering Intern, I worked closely with engineers and technicians to improve efficiency, reliability, and documentation across multiple projects. This experience allowed me to see how engineering concepts learned in the classroom can be applied to solve real-world operational challenges.
+One of my most impactful projects involved redesigning the company's documentation and labeling system. I developed a centralized process for organizing part numbers, version control records, and manufacturing documentation, making information easier to access and reducing errors during production. The improved system streamlined workflows and contributed to an estimated 10% reduction in build time. I also designed and implemented an improved testing stand used for battery data collection, increasing operator safety and improving measurement consistency, which led to approximately a 5% improvement in data reliability.
+In addition to process improvement projects, I reviewed technical instructions, verified assembly procedures, and helped identify opportunities to improve product quality. By testing manufacturing instructions and updating documentation, I contributed to more consistent assembly practices and a reduction in quality-related issues. I also participated in workflow mapping, safety initiatives, and data analysis projects that strengthened my understanding of quality engineering, root-cause analysis, and continuous improvement. Through this experience, I developed valuable technical, analytical, and leadership skills while confirming my passion for engineering and problem-solving.
+ 
+Extracurriculars
+
+Science Olympiad
+Science Olympiad has allowed me to explore a wide range of scientific disciplines through competitive events in biology, chemistry, astronomy, forensics, engineering, and experimental design. I have competed in numerous events over several years, developing strong analytical, research, and teamwork skills.
+One of my most meaningful contributions was coaching six Crime Busters teams and helping students prepare for competition. Under my guidance, the teams earned four medals at regional competitions, making Crime Busters the school's most successful events. This experience strengthened both my scientific knowledge and my ability to teach and mentor others.
+
+Varsity Badminton
+Badminton has been an important part of my life, teaching me discipline, perseverance, and teamwork. As a member of the Scripps Ranch High School Varsity Badminton Team and future team captain, I have developed leadership skills while balancing athletics with a rigorous academic schedule.
+The sport has taught me the value of consistency, resilience, and continuous improvement. Through practices, competitions, and leadership opportunities, I have learned how to motivate teammates and contribute to a positive and supportive team culture.
+
+Akshaya Patra Youth Association
+As the head of communications for the San Diego chapter of the Akshaya Patra Youth Association, I help support fundraising and awareness efforts for a nonprofit organization that provides meals to underprivileged students in India. Over several years, I have participated in planning events, coordinating volunteers, and promoting community engagement initiatives.
+Through this organization, I have contributed to fundraising efforts that have generated over $15,000 to support educational and nutrition programs. This experience has shown me how community involvement and collaboration can create meaningful change on a global scale. For this effort I was awarded the President’s Volunteer Service Award.
+Indian Classical Dance
+For over ten years, I have trained in Indian classical dance and participated in numerous cultural performances and community events. Dance has provided me with an opportunity to express creativity while developing discipline, focus, and stage presence.
+Beyond technical skills, dance has allowed me to share cultural traditions with diverse audiences and connect with my community. The experience has strengthened my confidence, commitment, and appreciation for the arts.
+Children's Engineering Book & STEM Outreach
+Motivated by a lack of awareness about engineering careers within my community, I created Maya and Jasper's Engineering Adventure, a children's book designed to introduce young students to different engineering disciplines. The project involved researching engineering fields, writing multiple drafts, coordinating publication, fundraising, and organizing community presentations.
+After publishing over 100 copies, I distributed books through schools, libraries, and community events while conducting engineering presentations for students. Surveys conducted before and after the program showed approximately a 20% increase in student interest in engineering, demonstrating the impact that accessible STEM education can have on younger learners.
+
+Community Service & Volunteer Work
+Throughout high school, I have been committed to serving my community through educational outreach, mentorship, nonprofit leadership, and volunteer activities. Whether mentoring younger students, organizing STEM programs, or supporting charitable initiatives, I strive to create opportunities that help others learn, grow, and succeed.
+These experiences have taught me that leadership is not about titles—it is about creating positive impact through service, collaboration, and a willingness to help others achieve their goals.
+Air Force JROTC (AFJROTC)
+Participation in Air Force Junior Reserve Officer Training Corps (AFJROTC) provided me with valuable lessons in leadership, discipline, teamwork, and personal responsibility. Through classroom instruction, leadership activities, and community service opportunities, I developed a stronger understanding of integrity, accountability, and the importance of serving others. The program challenged me to step outside my comfort zone, communicate effectively with peers, and contribute to a team-oriented environment.
+AFJROTC helped strengthen many of the skills I use in other areas of my life, including organization, time management, and leadership. Whether working as part of a team, participating in group activities, or balancing program responsibilities with academic and extracurricular commitments, I learned how discipline and preparation contribute to success. The experience reinforced the importance of character, perseverance, and leading by example—qualities that continue to influence my academic, professional, and personal goals.
+ 
+
+Skills
+My experiences in engineering, leadership, and research have helped me develop strong analytical and problem-solving skills. Through my Quality Engineering internship at FluidPowerAI, engineering outreach research project, and advanced STEM coursework, I have gained experience in data analysis, process improvement, technical documentation, statistical interpretation, and systems thinking. I enjoy breaking down complex problems, identifying root causes, and developing practical solutions supported by evidence and data. I am also proficient in Microsoft Office applications, technical presentations, survey design, research methods, and basic programming concepts through coursework in computer science, machine learning, and digital electronics.
+Beyond technical abilities, I have developed strong leadership, communication, and teamwork skills through my roles as President of Engineering Club, Youth Ambassador Lead at Akshay Patra, Badminton Varsity captain, and leader of multiple community outreach initiatives. These experiences have strengthened my ability to manage projects, coordinate teams, speak confidently in public settings, mentor younger students, and collaborate effectively with individuals from diverse backgrounds. Whether leading an organization, presenting engineering concepts to elementary students, or working alongside professionals during my internship, I strive to combine technical knowledge with empathy, creativity, and effective communication to create meaningful impact.
+
+
