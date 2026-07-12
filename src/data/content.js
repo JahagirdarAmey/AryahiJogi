@@ -122,7 +122,7 @@ export const content = {
     { category: "Communication", items: ["Public Speaking", "Technical Writing", "Outreach Coordination", "Team Collaboration"] }
   ],
   contact: {
-    email: "email@example.com",
+    email: "jogiaryahi@gmail.com",
     linkedin: "#",
     github: "https://github.com/AryahiJogi"
   }
