@@ -5,7 +5,7 @@ export const content = {
     title: "About Me",
     description: "My name is Aryahi Jogi, and I am a student at Scripps Ranch High School with a passion for engineering, problem-solving, and community impact. My interests span industrial engineering, human-centered design, and psychology, areas that allow me to combine analytical thinking with creativity and empathy.",
     details: [
-      "As a Quality Engineering Intern at FluidPowerAI, I worked on process improvement, documentation systems, data collection methods, and product quality initiatives. These experiences taught me how engineering principles can improve efficiency, safety, and reliability while helping organizations solve complex operational challenges.",
+      "As an Engineering Intern at FluidPowerAI, I worked on process improvement, documentation systems, data collection methods, and product quality initiatives. These experiences taught me how engineering principles can improve efficiency, safety, and reliability while helping organizations solve complex operational challenges.",
       "I am equally passionate about serving my community and inspiring future generations. As President of engineering club, a mentor and coach of middle school students for Science Olympiad, and leader of multiple outreach initiatives, I have worked to make STEM education more accessible to younger students.",
       "My goal is to continue combining engineering, leadership, and service to create positive and lasting impact."
     ]
