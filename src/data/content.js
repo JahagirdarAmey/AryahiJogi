@@ -1,6 +1,6 @@
 export const content = {
   name: "Aryahi Jogi",
-  role: "Engineering Student & STEM Advocate",
+  role: "Aspiring Engineering student and advocate",
   about: {
     title: "About Me",
     description: "My name is Aryahi Jogi, and I am a student at Scripps Ranch High School with a passion for engineering, problem-solving, and community impact. My interests span industrial engineering, human-centered design, and psychology, areas that allow me to combine analytical thinking with creativity and empathy.",
@@ -8,6 +8,7 @@ export const content = {
       "As an Engineering Intern at FluidPowerAI, I worked on process improvement, documentation systems, data collection methods, and product quality initiatives. These experiences taught me how engineering principles can improve efficiency, safety, and reliability while helping organizations solve complex operational challenges.",
       "I am equally passionate about serving my community and inspiring future generations. As President of engineering club, a mentor and coach of middle school students for Science Olympiad, and leader of multiple outreach initiatives, I have worked to make STEM education more accessible to younger students.",
       "My goal is to continue combining engineering, leadership, and service to create positive and lasting impact."
+      "I have worked to make Engineering education more accessible to younger students" 
     ]
   },
   publications: [
@@ -21,8 +22,9 @@ export const content = {
     {
       title: "Factors formula for STEM Awareness",
       type: "Research Paper",
-      description: "Research examining factors that contribute to low awareness and interest in engineering among students. The study evaluates the effectiveness of outreach interventions and measures changes in student interest.",
+      description: " First Authored research paper that was published in International Journal for Scientific and Research Publications edition"
       pdf: "#", // Placeholder
+      link: "https://www.ijsrp.org/research-paper-0626.php?rp=P17414283",
       tags: ["Research", "Statistics", "Data Analysis"]
     }
   ],
@@ -50,7 +52,9 @@ export const content = {
         "Designed an improved iPhone-based testing stand for battery data collection.",
         "Verified technical instructions, contributing to a 2% reduction in quality issues.",
         "Created process flow diagrams and assisted with workflow mapping."
+        "Current Project : Perform Design of Experiments to identify root cause for lower than advertised and variable battery shelf life.
       ],
+      email: "https://fluid-ai.com/",
       image: "/assets/images/internship.png"
     }
   ],
@@ -77,42 +81,49 @@ export const content = {
       "Calculus I & II (Miramar College)",
       "Political Science (Dual Enrollment)",
       "Additional Dual Enrollment Coursework (Senior Year)",
+      "Biomechanics and Mechanobiology (UCSD Extension),
       "Introduction to Computer Science (Python Programming - UCSD Extension)",
-      "Mechanical Engineering Fundamentals (UCSD Extension)",
       "Machine Learning (UCSD Extension)",
       "The Atmosphere (UCSD Extension)",
       "Musical Minds (UCSD Extension)"
+    ]
+    languages: [
+      "English",
+      "Spanish",
+      "Marathi",
+      "Hindi",
     ]
   },
   extracurriculars: [
     {
       title: "Science Olympiad",
       role: "Competitor & Coach",
-      description: "Coached six Crime Busters teams to four regional medals. Competed in biology, chemistry, and forensics.",
+      description: "Head Coach for 6 Crime Busters teams. Developed lesson plans, practice materials, and competition strategies while mentoring middle and high school students. Guided students in analytical thinking, forensic science concepts, and teamwork. My students earned 4 regional medals in Crime Busters and helped develop future team leaders, with three students later becoming coaches themselves.Competed in 3 events from middle school through high school and placed 3rd in State competition in Crime Busters."
       image: "/assets/images/science.png"
     },
     {
       title: "Varsity Badminton",
       role: "Team Captain",
-      description: "Learned discipline and resilience through competitive athletics at Scripps Ranch High School.",
+      description: "Competitive badminton player for over 8 years and member of the Scripps Ranch High School Varsity team. Developed discipline, teamwork, and resilience through year-round training and competition. Selected to serve as Varsity Captain during senior year and mentored younger athletes while helping build team culture.",
       image: "/assets/images/badminton.png"
     },
     {
       title: "Akshaya Patra Youth Association",
       role: "Head of Communications",
-      description: "Led fundraising efforts generating over $15,000 for underprivileged students in India. Awarded President’s Volunteer Service Award.",
+      description: "San Diego Youth Leader responsible for communications, outreach, and event coordination. Organized fundraising campaigns, youth programs, and community events supporting school meal initiatives. Launched a county-wide annual “Walkathon Event” that raised $15000 over 4 years and contributed to other organizational fundraising efforts. Mentored volunteers through a leadership role in annual Holi celebrations, camps, and outreach programs.",
+      link: "https://www.akshayapatra.org/", 
       image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000"
     },
     {
       title: "Indian Classical Dance",
       role: "Dancer",
-      description: "Over ten years of training and performance, sharing cultural traditions with diverse audiences.",
+      description: "Studied Kathak, an Indian classical dance form, for over 10 years. Performed at numerous cultural events and community programs while developing artistic expression, discipline, and stage presence. Completed multiple examinations to obtain Bachelor's degree with distinction and continued advanced training toward higher-level certification.",
       image: "/assets/images/dance.png"
     },
     {
       title: "Air Force JROTC",
-      role: "Cadet",
-      description: "Developed leadership, discipline, and accountability through the AFJROTC program.",
+      role: "Cadet", 
+      description: "Education Non-commission Officer and Education Officer. Presenter on the presentation team. Responsible for weekly scholarship and knowledge announcements. Responsible for all aspects of education.",
       image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1000"
     }
   ],
@@ -120,6 +131,7 @@ export const content = {
     { category: "Professional", items: ["Leadership", "Project Management", "Technical Presentations", "Mentorship"] },
     { category: "Technical", items: ["Data Analysis", "Process Improvement", "Quality Engineering", "Python", "Machine Learning"] },
     { category: "Communication", items: ["Public Speaking", "Technical Writing", "Outreach Coordination", "Team Collaboration"] }
+    { category: "Personal", items: ["Compassionate", "Persevering", "Resilient", "Collaborative", "Dependendable"] }
   ],
   contact: {
     email: "jogiaryahi@gmail.com",
