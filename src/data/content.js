@@ -7,7 +7,7 @@ export const content = {
     details: [
       "As an Engineering Intern at FluidPowerAI, I worked on process improvement, documentation systems, data collection methods, and product quality initiatives. These experiences taught me how engineering principles can improve efficiency, safety, and reliability while helping organizations solve complex operational challenges.",
       "I am equally passionate about serving my community and inspiring future generations. As President of engineering club, a mentor and coach of middle school students for Science Olympiad, and leader of multiple outreach initiatives, I have worked to make STEM education more accessible to younger students.",
-      "My goal is to continue combining engineering, leadership, and service to create positive and lasting impact."
+      "My goal is to continue combining engineering, leadership, and service to create positive and lasting impact.",
       "I have worked to make Engineering education more accessible to younger students" 
     ]
   },
@@ -22,7 +22,7 @@ export const content = {
     {
       title: "Factors formula for STEM Awareness",
       type: "Research Paper",
-      description: " First Authored research paper that was published in International Journal for Scientific and Research Publications edition"
+      description: " First Authored research paper that was published in International Journal for Scientific and Research Publications edition",
       pdf: "#", // Placeholder
       link: "https://www.ijsrp.org/research-paper-0626.php?rp=P17414283",
       tags: ["Research", "Statistics", "Data Analysis"]
@@ -51,8 +51,8 @@ export const content = {
         "Redesigned documentation and labeling, reducing build time by an estimated 10%.",
         "Designed an improved iPhone-based testing stand for battery data collection.",
         "Verified technical instructions, contributing to a 2% reduction in quality issues.",
-        "Created process flow diagrams and assisted with workflow mapping."
-        "Current Project : Perform Design of Experiments to identify root cause for lower than advertised and variable battery shelf life.
+        "Created process flow diagrams and assisted with workflow mapping.",
+        "Current Project : Perform Design of Experiments to identify root cause for lower than advertised and variable battery shelf life."
       ],
       email: "https://fluid-ai.com/",
       image: "/assets/images/internship.png"
@@ -81,12 +81,12 @@ export const content = {
       "Calculus I & II (Miramar College)",
       "Political Science (Dual Enrollment)",
       "Additional Dual Enrollment Coursework (Senior Year)",
-      "Biomechanics and Mechanobiology (UCSD Extension),
+      "Biomechanics and Mechanobiology (UCSD Extension)",
       "Introduction to Computer Science (Python Programming - UCSD Extension)",
       "Machine Learning (UCSD Extension)",
       "The Atmosphere (UCSD Extension)",
       "Musical Minds (UCSD Extension)"
-    ]
+    ],
     languages: [
       "English",
       "Spanish",
@@ -98,7 +98,7 @@ export const content = {
     {
       title: "Science Olympiad",
       role: "Competitor & Coach",
-      description: "Head Coach for 6 Crime Busters teams. Developed lesson plans, practice materials, and competition strategies while mentoring middle and high school students. Guided students in analytical thinking, forensic science concepts, and teamwork. My students earned 4 regional medals in Crime Busters and helped develop future team leaders, with three students later becoming coaches themselves.Competed in 3 events from middle school through high school and placed 3rd in State competition in Crime Busters."
+      description: "Head Coach for 6 Crime Busters teams. Developed lesson plans, practice materials, and competition strategies while mentoring middle and high school students. Guided students in analytical thinking, forensic science concepts, and teamwork. My students earned 4 regional medals in Crime Busters and helped develop future team leaders, with three students later becoming coaches themselves.Competed in 3 events from middle school through high school and placed 3rd in State competition in Crime Busters.",
       image: "/assets/images/science.png"
     },
     {
@@ -130,7 +130,7 @@ export const content = {
   skills: [
     { category: "Professional", items: ["Leadership", "Project Management", "Technical Presentations", "Mentorship"] },
     { category: "Technical", items: ["Data Analysis", "Process Improvement", "Quality Engineering", "Python", "Machine Learning"] },
-    { category: "Communication", items: ["Public Speaking", "Technical Writing", "Outreach Coordination", "Team Collaboration"] }
+    { category: "Communication", items: ["Public Speaking", "Technical Writing", "Outreach Coordination", "Team Collaboration"] },
     { category: "Personal", items: ["Compassionate", "Persevering", "Resilient", "Collaborative", "Dependendable"] }
   ],
   contact: {
