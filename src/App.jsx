@@ -185,9 +185,9 @@ const App = () => {
             <p className="text-lg mb-8 leading-relaxed text-indigo-100">
               {content.role}. Passionate about industrial engineering, human-centered design, and creating measurable community impact.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="#projects" className="btn">View Projects</a>
-              <a href="#contact" className="btn btn-outline">Get in Touch</a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="#projects" className="btn justify-center w-full sm:w-auto">View Projects</a>
+              <a href="#contact" className="btn btn-outline justify-center w-full sm:w-auto">Get in Touch</a>
             </div>
           </motion.div>
 
@@ -293,22 +293,22 @@ const App = () => {
                     {pub.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
                   </div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                   {pub.pdf && pub.pdf !== '#' ? (
-                    <a href={getAssetPath(pub.pdf)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline flex items-center gap-2">
+                    <a href={getAssetPath(pub.pdf)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
                       <FileText size={16} /> View PDF
                     </a>
                   ) : pub.link ? (
-                    <a href={pub.link} target="_blank" rel="noopener noreferrer" className="btn btn-sm flex items-center gap-2">
+                    <a href={pub.link} target="_blank" rel="noopener noreferrer" className="btn btn-sm flex items-center justify-center gap-2 w-full sm:w-auto">
                       <ExternalLink size={16} /> View Publication
                     </a>
                   ) : (
-                    <button className="btn btn-sm btn-outline flex items-center gap-2 opacity-50 cursor-not-allowed" style={{ pointerEvents: 'none' }} disabled>
+                    <button className="btn btn-sm btn-outline flex items-center justify-center gap-2 opacity-50 cursor-not-allowed w-full sm:w-auto" style={{ pointerEvents: 'none' }} disabled>
                       <FileText size={16} /> PDF Coming Soon
                     </button>
                   )}
                   {pub.title.includes("Maya") && pub.pdf && pub.pdf !== '#' && (
-                    <a href={getAssetPath(pub.pdf)} download className="btn btn-sm flex items-center gap-2">
+                    <a href={getAssetPath(pub.pdf)} download className="btn btn-sm flex items-center justify-center gap-2 w-full sm:w-auto">
                       <Download size={16} /> Download
                     </a>
                   )}
@@ -347,7 +347,7 @@ const App = () => {
                   </ul>
                   {project.email && (
                     <div className="pt-2">
-                      <a href={project.email} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline flex items-center gap-2 inline-flex">
+                      <a href={project.email} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline flex sm:inline-flex items-center justify-center gap-2 w-full sm:w-auto">
                         <ExternalLink size={16} /> Visit Website
                       </a>
                     </div>
