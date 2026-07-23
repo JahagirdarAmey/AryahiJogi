@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "record": "node scripts/record_walkthrough.js"
   },
   "dependencies": {
     "framer-motion": "^11.0.3",
@@ -26,6 +27,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "gh-pages": "^6.1.1",
+    "playwright": "^1.42.0",
     "vite": "^5.1.0"
   }
 }

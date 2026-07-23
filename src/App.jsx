@@ -173,11 +173,12 @@ const App = () => {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center pt-20 bg-bg-main">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="container grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="md:col-span-7"
           >
             <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Welcome to my portfolio</span>
             <h1 className="title-xl text-white">{content.name}</h1>
@@ -194,23 +195,26 @@ const App = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="md:col-span-5 w-full flex justify-center md:justify-end"
           >
-            <div className="aspect-[4/5] bg-primary/10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white/10">
-              <img 
-                src={getAssetPath("/assets/images/Profile_actual.jpeg")} 
-                alt={content.name}
-                className="w-full h-full object-cover transition-all duration-700"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-2xl hidden lg:block border border-white/20">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent">
-                  <Award size={24} />
-                </div>
-                <div>
-                  <p className="text-sm text-indigo-200">Quality Engineering</p>
-                  <p className="font-bold text-white">Intern at FluidPowerAI</p>
+            <div className="relative w-full" style={{ maxWidth: '340px' }}>
+              <div className="aspect-[4/5] bg-primary/10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white/10 w-full">
+                <img 
+                  src={getAssetPath("/assets/images/Profile_actual.jpeg")} 
+                  alt={content.name}
+                  className="w-full h-full transition-all duration-700"
+                  style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 badge-card backdrop-blur-md p-6 rounded-xl shadow-2xl hidden lg:block">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent">
+                    <Award size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-indigo-100 font-semibold">Quality Engineering</p>
+                    <p className="font-bold text-white">Intern at FluidPowerAI</p>
+                  </div>
                 </div>
               </div>
             </div>
