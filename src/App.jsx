@@ -173,7 +173,7 @@ const App = () => {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center pt-20 bg-bg-main">
-        <div className="container grid md:grid-cols-2 gap-12 items-center">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -198,9 +198,9 @@ const App = () => {
           >
             <div className="aspect-[4/5] bg-primary/10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white/10">
               <img 
-                src={getAssetPath("/assets/images/profile.png")} 
+                src={getAssetPath("/assets/images/Profile_actual.jpeg")} 
                 alt={content.name}
-                className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover transition-all duration-700"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-2xl hidden lg:block border border-white/20">
@@ -221,7 +221,7 @@ const App = () => {
       {/* About Section */}
       <section id="about" className="bg-bg-alt">
         <div className="container">
-          <div className="grid md:grid-cols-12 gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
             <div className="md:col-span-7">
               <SectionHeader title={content.about.title} />
               <div className="space-y-8 text-lg text-indigo-100">
@@ -271,7 +271,7 @@ const App = () => {
       <section id="publications" className="bg-bg-main">
         <div className="container">
           <SectionHeader title="Publications & Papers" subtitle="Educational outreach materials and research investigating STEM accessibility." />
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {content.publications.map((pub, i) => (
               <motion.div 
                 key={i}
@@ -293,6 +293,10 @@ const App = () => {
                   {pub.pdf && pub.pdf !== '#' ? (
                     <a href={getAssetPath(pub.pdf)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline flex items-center gap-2">
                       <FileText size={16} /> View PDF
+                    </a>
+                  ) : pub.link ? (
+                    <a href={pub.link} target="_blank" rel="noopener noreferrer" className="btn btn-sm flex items-center gap-2">
+                      <ExternalLink size={16} /> View Publication
                     </a>
                   ) : (
                     <button className="btn btn-sm btn-outline flex items-center gap-2 opacity-50 cursor-not-allowed" style={{ pointerEvents: 'none' }} disabled>
@@ -321,7 +325,6 @@ const App = () => {
                 <div className="flex-1">
                   <div className="relative group">
                     <img src={getAssetPath(project.image)} alt={project.title} className="rounded-2xl shadow-2xl w-full aspect-video object-cover" />
-                    <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors rounded-2xl"></div>
                   </div>
                 </div>
                 <div className="flex-1 space-y-6">
@@ -338,6 +341,13 @@ const App = () => {
                       </li>
                     ))}
                   </ul>
+                  {project.email && (
+                    <div className="pt-2">
+                      <a href={project.email} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline flex items-center gap-2 inline-flex">
+                        <ExternalLink size={16} /> Visit Website
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -349,7 +359,7 @@ const App = () => {
       <section id="coursework" className="bg-bg-main">
         <div className="container">
           <SectionHeader title="Academic Coursework" subtitle="Rigorous curriculum with a focus on engineering, advanced mathematics, and social sciences." />
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
               <h4 className="font-serif text-xl text-white mb-6 border-b border-accent/20 pb-2">Advanced Placement</h4>
               <ul className="space-y-4">
@@ -399,8 +409,7 @@ const App = () => {
                 className="bg-bg-main rounded-2xl overflow-hidden border border-white/10 group shadow-lg"
               >
                 <div className="h-48 overflow-hidden relative">
-                  <img src={getAssetPath(item.image)} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale group-hover:grayscale-0" />
-                  <div className="absolute inset-0 bg-primary/5 mix-blend-overlay"></div>
+                  <img src={getAssetPath(item.image)} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <span className="text-accent text-xs font-bold uppercase tracking-wider">{item.role}</span>

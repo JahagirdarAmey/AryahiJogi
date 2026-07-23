@@ -55,7 +55,7 @@ export const content = {
         "Current Project : Perform Design of Experiments to identify root cause for lower than advertised and variable battery shelf life."
       ],
       email: "https://fluid-ai.com/",
-      image: "/assets/images/internship.png"
+      image: "/assets/images/Internship_actual.jpeg"
     }
   ],
   coursework: {
@@ -99,13 +99,13 @@ export const content = {
       title: "Science Olympiad",
       role: "Competitor & Coach",
       description: "Head Coach for 6 Crime Busters teams. Developed lesson plans, practice materials, and competition strategies while mentoring middle and high school students. Guided students in analytical thinking, forensic science concepts, and teamwork. My students earned 4 regional medals in Crime Busters and helped develop future team leaders, with three students later becoming coaches themselves.Competed in 3 events from middle school through high school and placed 3rd in State competition in Crime Busters.",
-      image: "/assets/images/science.png"
+      image: "/assets/images/science_actual.jpeg"
     },
     {
       title: "Varsity Badminton",
       role: "Team Captain",
       description: "Competitive badminton player for over 8 years and member of the Scripps Ranch High School Varsity team. Developed discipline, teamwork, and resilience through year-round training and competition. Selected to serve as Varsity Captain during senior year and mentored younger athletes while helping build team culture.",
-      image: "/assets/images/badminton.png"
+      image: "/assets/images/badminton_actual.jpeg"
     },
     {
       title: "Akshaya Patra Youth Association",
@@ -118,7 +118,7 @@ export const content = {
       title: "Indian Classical Dance",
       role: "Dancer",
       description: "Studied Kathak, an Indian classical dance form, for over 10 years. Performed at numerous cultural events and community programs while developing artistic expression, discipline, and stage presence. Completed multiple examinations to obtain Bachelor's degree with distinction and continued advanced training toward higher-level certification.",
-      image: "/assets/images/dance.png"
+      image: "/assets/images/dance_actual.jpeg"
     },
     {
       title: "Air Force JROTC",
@@ -136,6 +136,6 @@ export const content = {
   contact: {
     email: "jogiaryahi@gmail.com",
     linkedin: "#",
-    github: "https://github.com/AryahiJogi"
+    github: "https://github.com/JahagirdarAmey"
   }
 }

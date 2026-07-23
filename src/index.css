@@ -282,6 +282,7 @@ section {
 .text-text-muted { color: var(--text-muted); }
 .text-text-main { color: var(--text-main); }
 .text-indigo-100 { color: var(--text-muted); }
+.text-indigo-200 { color: var(--text-muted); }
 .text-indigo-50 { color: var(--text-main); }
 
 .bg-white\/5 { background-color: var(--card-bg-opacity); }
