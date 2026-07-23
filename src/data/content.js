@@ -136,6 +136,6 @@ export const content = {
   contact: {
     email: "jogiaryahi@gmail.com",
     linkedin: "#",
-    github: "https://github.com/JahagirdarAmey"
+    github: "https://github.com/aryahi153"
   }
 }
