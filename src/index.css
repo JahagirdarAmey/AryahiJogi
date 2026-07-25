@@ -394,3 +394,70 @@ section {
   background-color: rgba(21, 42, 74, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+/* Navbar transitions and styles */
+.navbar-transparent {
+  background-color: transparent;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar-active {
+  background-color: rgba(252, 251, 247, 0.95);
+  backdrop-filter: blur(12px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(26, 54, 93, 0.1);
+}
+
+.theme-blue .navbar-active {
+  background-color: rgba(21, 42, 74, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile dropdown styles */
+.mobile-menu-dropdown {
+  background-color: rgba(252, 251, 247, 0.98);
+  border-bottom: 1px solid rgba(26, 54, 93, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.theme-blue .mobile-menu-dropdown {
+  background-color: rgba(21, 42, 74, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+/* Mobile dropdown links */
+.mobile-nav-link {
+  color: var(--text-main);
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.mobile-nav-link:hover {
+  color: var(--accent);
+}
+
+/* Nav icon buttons styling & transitions */
+.nav-icon-btn {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  color: var(--primary);
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon-btn:hover {
+  background-color: rgba(26, 54, 93, 0.08);
+}
+
+.theme-blue .nav-icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

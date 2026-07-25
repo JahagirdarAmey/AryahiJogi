@@ -46,7 +46,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || mobileMenu ? 'bg-[#1a365df2] backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || mobileMenu ? 'navbar-active' : 'navbar-transparent'}`}>
       <div className="container flex justify-between items-center">
         <a href="#" className="font-serif text-2xl font-bold text-white tracking-tight">
           {content.name.split(' ')[0]}<span className="text-accent">.</span>
@@ -67,9 +67,9 @@ const Navbar = ({ theme, toggleTheme }) => {
           {/* Theme Toggle Button */}
           <button 
             onClick={toggleTheme} 
-            className="p-2 rounded-full hover:bg-white/10 text-indigo-100 hover:text-accent transition-colors border-0 cursor-pointer"
+            className="nav-icon-btn cursor-pointer"
             aria-label="Toggle Theme"
-            style={{ background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            style={{ background: 'transparent' }}
           >
             {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
           </button>
@@ -83,14 +83,19 @@ const Navbar = ({ theme, toggleTheme }) => {
         <div className="flex items-center gap-2 md:hidden">
           <button 
             onClick={toggleTheme} 
-            className="p-2 rounded-full text-primary border-0 cursor-pointer"
+            className="nav-icon-btn cursor-pointer"
             aria-label="Toggle Theme"
-            style={{ background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            style={{ background: 'transparent' }}
           >
             {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
           </button>
-          <button className="text-primary border-0" style={{ background: 'transparent' }} onClick={() => setMobileMenu(!mobileMenu)}>
-            {mobileMenu ? <X /> : <Menu />}
+          <button 
+            className="nav-icon-btn cursor-pointer" 
+            style={{ background: 'transparent' }} 
+            onClick={() => setMobileMenu(!mobileMenu)}
+            aria-label="Toggle Menu"
+          >
+            {mobileMenu ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
@@ -102,14 +107,14 @@ const Navbar = ({ theme, toggleTheme }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#152a4a] border-b border-white/10"
+            className="md:hidden mobile-menu-dropdown"
           >
             <div className="container py-8 flex flex-col gap-6">
               {navLinks.map((link) => (
                 <a 
                   key={link.name} 
                   href={link.href} 
-                  className="text-lg font-medium text-white"
+                  className="text-lg font-medium mobile-nav-link"
                   onClick={() => setMobileMenu(false)}
                 >
                   {link.name}
