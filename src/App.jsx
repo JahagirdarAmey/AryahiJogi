@@ -16,7 +16,10 @@ import {
   X,
   Download,
   Sun,
-  Moon
+  Moon,
+  Trophy,
+  Activity,
+  Star
 } from 'lucide-react';
 import { content } from './data/content';
 
@@ -42,6 +45,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     { name: 'Publications', href: '#publications' },
     { name: 'Projects', href: '#projects' },
     { name: 'Coursework', href: '#coursework' },
+    { name: 'Accomplishments', href: '#accomplishments' },
     { name: 'Extracurriculars', href: '#extracurriculars' },
   ];
 
@@ -73,6 +77,10 @@ const Navbar = ({ theme, toggleTheme }) => {
           >
             {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
           </button>
+
+          <a href={getAssetPath("/assets/docs/Aryahi_Resume.doc")} download className="btn btn-outline btn-sm flex items-center gap-2" style={{ padding: '0.5rem 1.2rem', fontSize: '0.875rem' }}>
+            <Download size={14} /> Resume
+          </a>
 
           <a href="#contact" className="btn btn-sm" style={{ padding: '0.5rem 1.2rem', fontSize: '0.875rem' }}>
             Contact
@@ -120,7 +128,10 @@ const Navbar = ({ theme, toggleTheme }) => {
                   {link.name}
                 </a>
               ))}
-              <a href="#contact" className="btn" onClick={() => setMobileMenu(false)}>Contact</a>
+              <a href={getAssetPath("/assets/docs/Aryahi_Resume.doc")} download className="btn btn-outline flex items-center justify-center gap-2" onClick={() => setMobileMenu(false)}>
+                <Download size={16} /> Resume
+              </a>
+              <a href="#contact" className="btn flex items-center justify-center gap-2" onClick={() => setMobileMenu(false)}>Contact</a>
             </div>
           </motion.div>
         )}
@@ -368,7 +379,7 @@ const App = () => {
       <section id="coursework" className="bg-bg-main">
         <div className="container">
           <SectionHeader title="Academic Coursework" subtitle="Rigorous curriculum with a focus on engineering, advanced mathematics, and social sciences." />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
               <h4 className="font-serif text-xl text-white mb-6 border-b border-accent/20 pb-2">Advanced Placement</h4>
               <ul className="space-y-4">
@@ -402,12 +413,65 @@ const App = () => {
                 ))}
               </ul>
             </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+              <h4 className="font-serif text-xl text-white mb-6 border-b border-accent/20 pb-2">Engineering Programs</h4>
+              <ul className="space-y-4">
+                {content.coursework.summerPrograms.map((prog, i) => (
+                   <li key={i}>
+                      <a 
+                        href={prog.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="font-bold text-sm text-indigo-50 hover:text-accent transition-colors flex items-center gap-1.5 inline-flex"
+                      >
+                        {prog.name} <ExternalLink size={12} className="shrink-0 text-accent" />
+                      </a>
+                      <p className="text-xs text-indigo-200">{prog.institution}</p>
+                   </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accomplishments */}
+      <section id="accomplishments" className="bg-bg-alt">
+        <div className="container">
+          <SectionHeader title="Honors & Accomplishments" subtitle="Academic honors, athletic achievements, and artistic credentials." />
+          <div className="max-w-4xl mx-auto bg-bg-main p-8 md:p-12 rounded-3xl border border-white/10 shadow-xl">
+            <ul className="space-y-6">
+              {content.accomplishments.map((item, i) => (
+                <li key={i} className="flex gap-4 items-start text-indigo-100">
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-accent/15 flex items-center justify-center text-accent mt-0.5">
+                    {item.icon === 'award' ? <Award size={18} /> : 
+                     item.icon === 'book' ? <BookOpen size={18} /> : 
+                     item.icon === 'activity' ? <Activity size={18} /> : 
+                     item.icon === 'star' ? <Star size={18} /> : 
+                     <Trophy size={18} />}
+                  </div>
+                  <div>
+                    {item.link ? (
+                      <p className="font-semibold text-white leading-relaxed">
+                        {item.title}{' '}
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center gap-1">
+                          (View link <ExternalLink size={12} />)
+                        </a>
+                      </p>
+                    ) : (
+                      <p className="font-semibold text-white leading-relaxed">{item.title}</p>
+                    )}
+                    {item.description && <p className="text-sm text-indigo-200 mt-1 leading-relaxed">{item.description}</p>}
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
       {/* Extracurriculars */}
-      <section id="extracurriculars" className="bg-bg-alt">
+      <section id="extracurriculars" className="bg-bg-main">
         <div className="container">
           <SectionHeader title="Extracurricular Activities" subtitle="Leadership and skill development through sports, arts, and community service." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -418,7 +482,11 @@ const App = () => {
                 className="bg-bg-main rounded-2xl overflow-hidden border border-white/10 group shadow-lg"
               >
                 <div className="h-48 overflow-hidden relative">
-                  <img src={getAssetPath(item.image)} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img 
+                    src={getAssetPath(item.image)} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover transition-transform duration-500" 
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-accent text-xs font-bold uppercase tracking-wider">{item.role}</span>
@@ -432,7 +500,7 @@ const App = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="contact" className="bg-bg-main text-white relative overflow-hidden">
+      <section id="contact" className="bg-bg-alt text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
         <div className="container">
           <div className="flex flex-col md:flex-row gap-12 items-center">

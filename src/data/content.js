@@ -37,10 +37,11 @@ export const content = {
       points: [
         "Completed nine drafts and coordinated publication & distribution.",
         "Organized presentations at elementary schools, libraries, and bookstores.",
-        "Conducted surveys showing a 20% increase in student interest in engineering.",
+        "Conducted surveys showing a 30% increase in student interest in engineering.",
+        "Presented engineering workshops to increase clarity about engineering majors by 19%.",
         "Secured funding through personal work and community fundraising."
       ],
-      image: "/assets/images/book.png"
+      image: "/assets/images/outreach_actual.jpeg"
     },
     {
       title: "Quality Engineering Internship",
@@ -48,17 +49,29 @@ export const content = {
       period: "Internship",
       description: "Focused on process optimization, quality improvement, and documentation management in a professional engineering environment.",
       points: [
-        "Redesigned documentation and labeling, reducing build time by an estimated 10%.",
-        "Designed an improved iPhone-based testing stand for battery data collection.",
-        "Verified technical instructions, contributing to a 2% reduction in quality issues.",
-        "Created process flow diagrams and assisted with workflow mapping.",
-        "Current Project : Perform Design of Experiments to identify root cause for lower than advertised and variable battery shelf life."
+        "Consolidated manufacturing documentation to reduce errors by 2%.",
+        "Improved assembly instructions using user feedback to improve 26 discrepancies.",
+        "Redesigned phone holder for more consistent and safe data collection to improve accuracy by 7%.",
+        "Applied continuous improvement principles.",
+        "Ongoing Project: Perform Design of Experiments to identify root cause for lower than advertised and variable battery shelf life."
       ],
       email: "https://fluid-ai.com/",
       image: "/assets/images/Internship_actual.jpeg"
     }
   ],
   coursework: {
+    summerPrograms: [
+      {
+        name: "Operation Catapult",
+        institution: "Rose-Hulman Institute of Technology",
+        link: "https://www.rose-hulman.edu/admissions-and-aid/early-planning/operation-catapult/index.html"
+      },
+      {
+        name: "EPIC",
+        institution: "California Polytechnic State University, San Luis Obispo",
+        link: "https://epic.calpoly.edu/"
+      }
+    ],
     ap: [
       { name: "AP Biology", description: "Advanced study of biological systems." },
       { name: "AP Statistics", description: "Statistical analysis and data interpretation." },
@@ -78,7 +91,8 @@ export const content = {
       "Honors U.S. History"
     ],
     college: [
-      "Calculus I & II (Miramar College)",
+      "College Math 151/252 (Calculus) (Miramar College)",
+      "Manufacturing Engineering Technology (City College)",
       "Political Science (Dual Enrollment)",
       "Additional Dual Enrollment Coursework (Senior Year)",
       "Biomechanics and Mechanobiology (UCSD Extension)",
@@ -124,7 +138,45 @@ export const content = {
       title: "Air Force JROTC",
       role: "Cadet", 
       description: "Education Non-commission Officer and Education Officer. Presenter on the presentation team. Responsible for weekly scholarship and knowledge announcements. Responsible for all aspects of education.",
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1000"
+      image: "/assets/images/jrotc_actual.jpeg"
+    }
+  ],
+  accomplishments: [
+    {
+      title: "Published Research Paper in International Journal",
+      description: "Published first-authored paper 'Factors formula for STEM Awareness' in the International Journal for Scientific and Research Publications (IJSRP).",
+      link: "https://ijsrp.org/research-paper-0626.php?rp=P17414283",
+      icon: "book"
+    },
+    {
+      title: "Undergraduate Degree in Indian Classical Dance – KATHAK (2024)",
+      description: "Obtained undergraduate degree with distinction in Kathak from Pracheen Kala Kendra, India, after 10+ years of training and exams.",
+      icon: "award"
+    },
+    {
+      title: "AP Scholar Award",
+      description: "Awarded by the College Board based on exams offered by the end of Junior Year.",
+      icon: "star"
+    },
+    {
+      title: "U.S. President's Volunteer Service Award (PVSA) (2024)",
+      description: "Won the award for volunteering leadership and raising $15,000 for the NGO Akshaya Patra.",
+      icon: "trophy"
+    },
+    {
+      title: "3rd Place in California State Science Olympiad (2022)",
+      description: "Placed 3rd in State in Experimental Design (and previously competed in Crime Busters).",
+      icon: "trophy"
+    },
+    {
+      title: "Varsity Badminton Accomplishments (2019 - 2026)",
+      description: "2026 Runners Up at Stay Classy Invitational (Individual); Semifinalist at CIF tournament (Team). 2024 Semifinalist at San Diego Badminton Rookie tournament; First Freshman in 20 years of Scripps Ranch High School to start in Varsity Tournament Opener. 2019 Bronze Medal at Palm Springs Badminton Championship.",
+      icon: "activity"
+    },
+    {
+      title: "Gifted and Talented Education (GATE) Seminar Identified Student (2018 - PRESENT)",
+      description: "Identified for the selective GATE Seminar program representing advanced intellectual development and academic potential.",
+      icon: "star"
     }
   ],
   skills: [
