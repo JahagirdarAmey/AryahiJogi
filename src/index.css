@@ -594,14 +594,6 @@ section {
 }
 
 /* Semi-transparent section overlays for cosmic backgrounds */
-.theme-blue section {
-  background-color: transparent !important;
-}
-
-.theme-blue section.bg-bg-alt {
-  background-color: rgba(30, 58, 138, 0.45) !important;
-}
-
 .theme-cyber section {
   background-color: transparent !important;
 }

@@ -170,7 +170,7 @@ const Starfield = ({ theme }) => {
   const canvasRef = React.useRef(null);
 
   React.useEffect(() => {
-    if (theme !== 'cyber' && theme !== 'blue') return;
+    if (theme !== 'cyber') return;
 
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -199,9 +199,7 @@ const Starfield = ({ theme }) => {
         twinkleSpeed: Math.random() * 0.02 + 0.005,
         alpha: Math.random(),
         twinkleDirection: Math.random() > 0.5 ? 1 : -1,
-        color: theme === 'cyber' 
-          ? (Math.random() > 0.7 ? (Math.random() > 0.5 ? '168, 85, 247' : '6, 182, 212') : '255, 255, 255')
-          : '255, 255, 255'
+        color: Math.random() > 0.7 ? (Math.random() > 0.5 ? '168, 85, 247' : '6, 182, 212') : '255, 255, 255'
       });
     }
 
@@ -245,13 +243,13 @@ const Starfield = ({ theme }) => {
     };
   }, [theme]);
 
-  if (theme !== 'cyber' && theme !== 'blue') return null;
+  if (theme !== 'cyber') return null;
 
   return (
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none"
-      style={{ zIndex: -1, opacity: theme === 'cyber' ? 0.85 : 0.45 }}
+      style={{ zIndex: -1, opacity: 0.85 }}
     />
   );
 };
