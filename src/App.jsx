@@ -19,7 +19,8 @@ import {
   Moon,
   Trophy,
   Activity,
-  Star
+  Star,
+  Cpu
 } from 'lucide-react';
 import { content } from './data/content';
 
@@ -75,7 +76,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             aria-label="Toggle Theme"
             style={{ background: 'transparent' }}
           >
-            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+            {theme === 'light' ? <Moon size={20} /> : theme === 'blue' ? <Cpu size={20} /> : <Sun size={20} className="text-accent animate-pulse" />}
           </button>
 
           <a href={getAssetPath("/assets/docs/Aryahi_Resume.doc")} download className="btn btn-outline btn-sm flex items-center gap-2" style={{ padding: '0.5rem 1.2rem', fontSize: '0.875rem' }}>
@@ -95,7 +96,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             aria-label="Toggle Theme"
             style={{ background: 'transparent' }}
           >
-            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+            {theme === 'light' ? <Moon size={20} /> : theme === 'blue' ? <Cpu size={20} /> : <Sun size={20} className="text-accent animate-pulse" />}
           </button>
           <button 
             className="nav-icon-btn cursor-pointer" 
@@ -165,26 +166,122 @@ const SectionHeader = ({ title, subtitle }) => (
   </div>
 );
 
+const Starfield = ({ theme }) => {
+  const canvasRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (theme !== 'cyber' && theme !== 'blue') return;
+
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let animationFrameId;
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const starCount = 100;
+    const stars = [];
+
+    for (let i = 0; i < starCount; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 1.5 + 0.5,
+        speedX: (Math.random() - 0.5) * 0.15,
+        speedY: (Math.random() - 0.5) * 0.15,
+        twinkleSpeed: Math.random() * 0.02 + 0.005,
+        alpha: Math.random(),
+        twinkleDirection: Math.random() > 0.5 ? 1 : -1,
+        color: theme === 'cyber' 
+          ? (Math.random() > 0.7 ? (Math.random() > 0.5 ? '168, 85, 247' : '6, 182, 212') : '255, 255, 255')
+          : '255, 255, 255'
+      });
+    }
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < starCount; i++) {
+        const star = stars[i];
+
+        star.x += star.speedX;
+        star.y += star.speedY;
+
+        if (star.x < 0) star.x = canvas.width;
+        if (star.x > canvas.width) star.x = 0;
+        if (star.y < 0) star.y = canvas.height;
+        if (star.y > canvas.height) star.y = 0;
+
+        star.alpha += star.twinkleSpeed * star.twinkleDirection;
+        if (star.alpha >= 1) {
+          star.alpha = 1;
+          star.twinkleDirection = -1;
+        } else if (star.alpha <= 0.1) {
+          star.alpha = 0.1;
+          star.twinkleDirection = 1;
+        }
+
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${star.color}, ${star.alpha})`;
+        ctx.fill();
+      }
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [theme]);
+
+  if (theme !== 'cyber' && theme !== 'blue') return null;
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 pointer-events-none"
+      style={{ zIndex: -1, opacity: theme === 'cyber' ? 0.85 : 0.45 }}
+    />
+  );
+};
+
 const App = () => {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('portfolio-theme') || 'light';
   });
 
   useEffect(() => {
+    document.documentElement.classList.remove('theme-blue', 'theme-cyber');
     if (theme === 'blue') {
       document.documentElement.classList.add('theme-blue');
-    } else {
-      document.documentElement.classList.remove('theme-blue');
+    } else if (theme === 'cyber') {
+      document.documentElement.classList.add('theme-cyber');
     }
     localStorage.setItem('portfolio-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'blue' : 'light');
+    setTheme(prev => {
+      if (prev === 'light') return 'blue';
+      if (prev === 'blue') return 'cyber';
+      return 'light';
+    });
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <Starfield theme={theme} />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
 
       {/* Hero Section */}

@@ -20,6 +20,8 @@
   --card-border-opacity-20: rgba(26, 54, 93, 0.15);
   --nav-bg: rgba(252, 251, 247, 0.96);
   --mobile-menu-bg: #fcfbf7;
+  --badge-bg: #ffffff;
+  --badge-border: rgba(26, 54, 93, 0.15);
 
   /* Button variables for Light Theme */
   --btn-bg: var(--primary);
@@ -51,6 +53,8 @@
   --card-border-opacity-20: rgba(255, 255, 255, 0.2);
   --nav-bg: rgba(26, 54, 93, 0.96);
   --mobile-menu-bg: #152a4a;
+  --badge-bg: rgba(21, 42, 74, 0.85);
+  --badge-border: rgba(255, 255, 255, 0.15);
 
   /* Button variables for Blue Theme */
   --btn-bg: var(--accent);
@@ -61,6 +65,149 @@
   --btn-outline-border: #ffffff;
   --btn-outline-hover-bg: #ffffff;
   --btn-outline-hover-text: #1a365d;
+}
+
+.theme-cyber, :root.theme-cyber {
+  /* Cyber Futuristic Theme */
+  --primary: #06b6d4; /* Neon Cyan */
+  --primary-light: #22d3ee;
+  --accent: #a855f7; /* Neon Purple */
+  --bg-main: #060b13; /* Cyber Slate/Black */
+  --bg-alt: #0a111e; /* Cyber Dark Gray for alt sections */
+  --text-main: #ffffff; /* Crisp white for text */
+  --text-muted: #94a3b8; /* Cyber slate gray for secondary text */
+  --border: rgba(6, 182, 212, 0.15); /* Neon Cyan borders */
+  --shadow: 0 0 15px rgba(6, 182, 212, 0.15), 0 0 5px rgba(168, 85, 247, 0.1);
+
+  /* Theme mappings for Cyber Theme */
+  --card-bg-opacity: rgba(10, 17, 30, 0.7);
+  --card-bg-opacity-10: rgba(6, 182, 212, 0.05);
+  --card-border-opacity: rgba(6, 182, 212, 0.2);
+  --card-border-opacity-20: rgba(168, 85, 247, 0.3);
+  --nav-bg: rgba(6, 11, 19, 0.9);
+  --mobile-menu-bg: #0a111e;
+  --badge-bg: rgba(10, 17, 30, 0.8);
+  --badge-border: rgba(6, 182, 212, 0.25);
+
+  /* Button variables for Cyber Theme */
+  --btn-bg: var(--primary);
+  --btn-text: #060b13;
+  --btn-hover-bg: var(--accent);
+  --btn-hover-text: #ffffff;
+  --btn-outline-text: var(--primary);
+  --btn-outline-border: var(--primary);
+  --btn-outline-hover-bg: var(--primary);
+  --btn-outline-hover-text: #060b13;
+}
+
+/* Cyber Theme Custom Overrides */
+.theme-cyber h1,
+.theme-cyber h2,
+.theme-cyber h3,
+.theme-cyber h4,
+.theme-cyber h5,
+.theme-cyber h6,
+.theme-cyber .font-serif {
+  font-family: 'Orbitron', sans-serif !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.25);
+}
+
+.theme-cyber body,
+.theme-cyber p,
+.theme-cyber li,
+.theme-cyber span,
+.theme-cyber a,
+.theme-cyber button {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.theme-cyber section {
+  background-image: linear-gradient(rgba(6, 182, 212, 0.02) 1px, transparent 1px), 
+                    linear-gradient(90deg, rgba(6, 182, 212, 0.02) 1px, transparent 1px) !important;
+  background-size: 30px 30px !important;
+}
+
+/* Glowing card overrides */
+.theme-cyber .bg-white\/5,
+.theme-cyber .bg-bg-main {
+  background-color: rgba(10, 17, 30, 0.7) !important;
+  backdrop-filter: blur(8px) !important;
+  border-color: rgba(6, 182, 212, 0.2) !important;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.03), 0 0 5px rgba(168, 85, 247, 0.03) !important;
+}
+
+@keyframes cyber-border-pulse {
+  0% { border-color: rgba(6, 182, 212, 0.45); box-shadow: 0 0 15px rgba(6, 182, 212, 0.2), 0 0 5px rgba(168, 85, 247, 0.1); }
+  50% { border-color: rgba(168, 85, 247, 0.6); box-shadow: 0 0 25px rgba(168, 85, 247, 0.35), 0 0 10px rgba(6, 182, 212, 0.2); }
+  100% { border-color: rgba(6, 182, 212, 0.45); box-shadow: 0 0 15px rgba(6, 182, 212, 0.2), 0 0 5px rgba(168, 85, 247, 0.1); }
+}
+
+.theme-cyber .bg-white\/5,
+.theme-cyber .bg-bg-main,
+.theme-cyber .rounded-xl,
+.theme-cyber .rounded-2xl,
+.theme-cyber .rounded-3xl {
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s, box-shadow 0.3s !important;
+}
+
+.theme-cyber .bg-white\/5:hover,
+.theme-cyber .bg-bg-main:hover,
+.theme-cyber .rounded-xl:hover,
+.theme-cyber .rounded-2xl:hover,
+.theme-cyber .rounded-3xl:hover {
+  transform: translateY(-8px) scale(1.015) !important;
+  animation: cyber-border-pulse 2.5s infinite ease-in-out !important;
+  background-color: rgba(6, 182, 212, 0.03) !important;
+  border-width: 1px !important;
+}
+
+/* Heading color highlight inside hovered cards in Cyber Theme */
+.theme-cyber .bg-white\/5:hover h3,
+.theme-cyber .bg-bg-main:hover h3,
+.theme-cyber .rounded-xl:hover h4,
+.theme-cyber .rounded-2xl:hover h3,
+.theme-cyber .rounded-3xl:hover h3 {
+  color: var(--primary) !important;
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.4) !important;
+  transition: color 0.3s, text-shadow 0.3s !important;
+}
+
+/* Image zoom & color shift on card hover */
+.theme-cyber .group:hover img {
+  transform: scale(1.08) !important;
+  filter: hue-rotate(15deg) brightness(1.1) !important;
+}
+
+.theme-cyber .btn {
+  font-family: 'Orbitron', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 6px !important;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.15) !important;
+  transition: var(--transition) !important;
+}
+
+.theme-cyber .btn-outline {
+  border-color: var(--primary) !important;
+  background: transparent !important;
+  color: var(--primary) !important;
+}
+
+.theme-cyber .btn-outline:hover {
+  background: var(--primary) !important;
+  color: #060b13 !important;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4) !important;
+}
+
+@keyframes cyber-glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 2px var(--accent)); }
+  50% { filter: drop-shadow(0 0 8px var(--accent)); }
+}
+
+.theme-cyber .text-accent {
+  animation: cyber-glow-pulse 3s infinite ease-in-out;
 }
 
 * {
@@ -288,12 +435,12 @@ section {
 
 .text-primary { color: var(--primary); }
 .text-accent { color: var(--accent); }
-.text-white { color: var(--text-main); }
-.text-text-muted { color: var(--text-muted); }
-.text-text-main { color: var(--text-main); }
-.text-indigo-100 { color: var(--text-muted); }
-.text-indigo-200 { color: var(--text-muted); }
-.text-indigo-50 { color: var(--text-main); }
+.text-white { color: var(--text-main) !important; }
+.text-text-muted { color: var(--text-muted) !important; }
+.text-text-main { color: var(--text-main) !important; }
+.text-indigo-100 { color: var(--text-muted) !important; }
+.text-indigo-200 { color: var(--text-muted) !important; }
+.text-indigo-50 { color: var(--text-main) !important; }
 
 .bg-white\/5 { background-color: var(--card-bg-opacity); }
 .bg-white\/10 { background-color: var(--card-bg-opacity-10); }
@@ -386,13 +533,9 @@ section {
 
 /* Badge card styling for theme readability */
 .badge-card {
-  background-color: #ffffff;
-  border: 1px solid rgba(26, 54, 93, 0.15);
-}
-
-.theme-blue .badge-card {
-  background-color: rgba(21, 42, 74, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: var(--badge-bg) !important;
+  border: 1px solid var(--badge-border) !important;
+  backdrop-filter: blur(12px) !important;
 }
 
 /* Navbar transitions and styles */
@@ -403,30 +546,18 @@ section {
 }
 
 .navbar-active {
-  background-color: rgba(252, 251, 247, 0.95);
+  background-color: var(--nav-bg) !important;
   backdrop-filter: blur(12px);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(26, 54, 93, 0.1);
-}
-
-.theme-blue .navbar-active {
-  background-color: rgba(21, 42, 74, 0.95);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid var(--border);
 }
 
 /* Mobile dropdown styles */
 .mobile-menu-dropdown {
-  background-color: rgba(252, 251, 247, 0.98);
-  border-bottom: 1px solid rgba(26, 54, 93, 0.1);
-  backdrop-filter: blur(12px);
-}
-
-.theme-blue .mobile-menu-dropdown {
-  background-color: rgba(21, 42, 74, 0.98);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--mobile-menu-bg) !important;
+  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
 
@@ -460,4 +591,21 @@ section {
 
 .theme-blue .nav-icon-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Semi-transparent section overlays for cosmic backgrounds */
+.theme-blue section {
+  background-color: transparent !important;
+}
+
+.theme-blue section.bg-bg-alt {
+  background-color: rgba(30, 58, 138, 0.45) !important;
+}
+
+.theme-cyber section {
+  background-color: transparent !important;
+}
+
+.theme-cyber section.bg-bg-alt {
+  background-color: rgba(10, 17, 30, 0.5) !important;
 }
