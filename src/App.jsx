@@ -462,6 +462,16 @@ const App = () => {
                       <p className="font-semibold text-white leading-relaxed">{item.title}</p>
                     )}
                     {item.description && <p className="text-sm text-indigo-200 mt-1 leading-relaxed">{item.description}</p>}
+                    {item.bullets && (
+                      <ul className="mt-3 space-y-2 pl-2">
+                        {item.bullets.map((bullet, idx) => (
+                          <li key={idx} className="text-sm flex items-start gap-2.5 text-indigo-200 leading-relaxed">
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0"></div>
+                            <span>{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </li>
               ))}
@@ -486,6 +496,7 @@ const App = () => {
                     src={getAssetPath(item.image)} 
                     alt={item.title} 
                     className="w-full h-full object-cover transition-transform duration-500" 
+                    style={item.imagePosition ? { objectPosition: item.imagePosition } : {}}
                   />
                 </div>
                 <div className="p-6">

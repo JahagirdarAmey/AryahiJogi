@@ -126,19 +126,22 @@ export const content = {
       role: "Head of Communications",
       description: "San Diego Youth Leader responsible for communications, outreach, and event coordination. Organized fundraising campaigns, youth programs, and community events supporting school meal initiatives. Launched a county-wide annual “Walkathon Event” that raised $15000 over 4 years and contributed to other organizational fundraising efforts. Mentored volunteers through a leadership role in annual Holi celebrations, camps, and outreach programs.",
       link: "https://www.akshayapatra.org/", 
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000"
+      image: "/assets/images/holi_actual.jpeg",
+      imagePosition: "center 25%"
     },
     {
       title: "Indian Classical Dance",
       role: "Dancer",
       description: "Studied Kathak, an Indian classical dance form, for over 10 years. Performed at numerous cultural events and community programs while developing artistic expression, discipline, and stage presence. Completed multiple examinations to obtain Bachelor's degree with distinction and continued advanced training toward higher-level certification.",
-      image: "/assets/images/dance_actual.jpeg"
+      image: "/assets/images/dance_actual.jpeg",
+      imagePosition: "center 20%"
     },
     {
       title: "Air Force JROTC",
       role: "Cadet", 
       description: "Education Non-commission Officer and Education Officer. Presenter on the presentation team. Responsible for weekly scholarship and knowledge announcements. Responsible for all aspects of education.",
-      image: "/assets/images/jrotc_actual.jpeg"
+      image: "/assets/images/jrotc_actual.jpeg",
+      imagePosition: "center 20%"
     }
   ],
   accomplishments: [
@@ -170,7 +173,13 @@ export const content = {
     },
     {
       title: "Varsity Badminton Accomplishments (2019 - 2026)",
-      description: "2026 Runners Up at Stay Classy Invitational (Individual); Semifinalist at CIF tournament (Team). 2024 Semifinalist at San Diego Badminton Rookie tournament; First Freshman in 20 years of Scripps Ranch High School to start in Varsity Tournament Opener. 2019 Bronze Medal at Palm Springs Badminton Championship.",
+      bullets: [
+        "2026 – Runners Up at Stay Classy Invitational (Individual)",
+        "2026 – Semifinalist at CIF tournament (Team)",
+        "2024 – Semifinalist at San Diego Badminton Rookie tournament",
+        "2024 – First Freshman in 20 years of Scripps Ranch High School to start off in Varsity Tournament Opener",
+        "2019 – Bronze Medal at Palm Springs Badminton Championship"
+      ],
       icon: "activity"
     },
     {
