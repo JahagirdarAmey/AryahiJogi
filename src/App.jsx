@@ -79,8 +79,8 @@ const Navbar = ({ theme, toggleTheme }) => {
             {theme === 'light' ? <Moon size={20} /> : theme === 'blue' ? <Cpu size={20} /> : <Sun size={20} className="text-accent animate-pulse" />}
           </button>
 
-          <a href={getAssetPath("/assets/docs/Aryahi_Resume.doc")} download className="btn btn-outline btn-sm flex items-center gap-2" style={{ padding: '0.5rem 1.2rem', fontSize: '0.875rem' }}>
-            <Download size={14} /> Resume
+          <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Faryahijogi.github.io%2Fassets%2Fdocs%2FAryahi_Resume.doc&wdOrigin=BROWSELINK" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm flex items-center gap-2" style={{ padding: '0.5rem 1.2rem', fontSize: '0.875rem' }}>
+            <FileText size={14} /> Resume
           </a>
 
           <a href="#contact" className="btn btn-sm" style={{ padding: '0.5rem 1.2rem', fontSize: '0.875rem' }}>
@@ -129,8 +129,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                   {link.name}
                 </a>
               ))}
-              <a href={getAssetPath("/assets/docs/Aryahi_Resume.doc")} download className="btn btn-outline flex items-center justify-center gap-2" onClick={() => setMobileMenu(false)}>
-                <Download size={16} /> Resume
+              <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Faryahijogi.github.io%2Fassets%2Fdocs%2FAryahi_Resume.doc&wdOrigin=BROWSELINK" target="_blank" rel="noopener noreferrer" className="btn btn-outline flex items-center justify-center gap-2" onClick={() => setMobileMenu(false)}>
+                <FileText size={16} /> Resume
               </a>
               <a href="#contact" className="btn flex items-center justify-center gap-2" onClick={() => setMobileMenu(false)}>Contact</a>
             </div>
@@ -256,7 +256,7 @@ const Starfield = ({ theme }) => {
 
 const App = () => {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('portfolio-theme') || 'light';
+    return localStorage.getItem('portfolio-theme') || 'blue';
   });
 
   useEffect(() => {
