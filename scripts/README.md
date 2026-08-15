@@ -18,7 +18,7 @@ The recorder works by capturing your local website running in development mode. 
 ```bash
 npm run dev
 ```
-*(Make sure the server is running on `http://localhost:5173/AryahiJogi/`)*
+*(Make sure the server is running on `http://localhost:5173/`)*
 
 ### 3. Run the Recorder
 Open a separate terminal window and run:

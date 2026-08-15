@@ -24,7 +24,7 @@ const os = require('os');
   const page = await context.newPage();
   
   console.log('Navigating to local portfolio site...');
-  await page.goto('http://localhost:5173/AryahiJogi/');
+  await page.goto('http://localhost:5173/');
   await page.waitForTimeout(2000); // Wait for page load and initial animations
 
   // Scroll down slowly to show the whole page
