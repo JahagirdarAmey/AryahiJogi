@@ -197,6 +197,6 @@ export const content = {
   contact: {
     email: "jogiaryahi@gmail.com",
     linkedin: "https://www.linkedin.com/in/aryahi-jogi-3724963b5?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
-    github: "https://github.com/aryahi153"
+    github: "https://github.com/aryahijogi"
   }
 }
